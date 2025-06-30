@@ -1,20 +1,27 @@
-Network File Shares and Permissions
+
+
+<h1>Network File Shares and Permissions</h1> 
 In this tutorial, file folders will be created within the domain controller, security groups will be created and permissions for users will be set for access
 
-Environments and Technologies Used
-Microsoft Azure (Virtual Machines/Compute)
-Remote Desktop
-Operating Systems Used
+<h1>Environments and Technologies Used</h1>
+
+- Microsoft Azure (Virtual Machines/Compute)
+- Remote Desktop
+
+<h1>Operating Systems Used</h1>
+
 Windows 10 (21H2)
 Ubuntu Server 20.04
-High-Level Steps
-Create some sample file shares with various permissions
-Attempt to access file shares as a normal user
-Create an “ACCOUNTANTS” Security Group, assign permissions, an test access
+<h1>High-Level Steps</h1> 
+
+- Create some sample file shares with various permissions
+- Attempt to access file shares as a normal user
+- Create an “ACCOUNTANTS” Security Group, assign permissions, an test access
 
 
-Create some sample file shares with various permissions
-To begin, some folders will be created and they will each get different permissions. Within the domain controller the following folders will be created within the c-drive.  (“read-access”, “write-access”, “no-access”, “accounting”). 
+<h1>Create some sample file shares with various permissions</h1>
+
+To begin, some folders will be created and they will each get different permissions. Within the domain controller the following folders will be created within the c-drive.  (“read-access”, “write-access”, “no-access”, “accounting”). Access File Explorer then select the "Windows (C:)" drive. Right click the blank space and select "New" then select "Folder". You can rename this folder by right clicking the folder then selecting "Rename". this folder will be named "read-access".  
 
 
 
