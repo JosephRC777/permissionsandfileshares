@@ -23,258 +23,62 @@ Ubuntu Server 20.04
 
 To begin, some folders will be created and they will each get different permissions. Within the domain controller the following folders will be created within the c-drive.  (“read-access”, “write-access”, “no-access”, “accounting”). Access File Explorer then select the "Windows (C:)" drive. Right click the blank space and select "New" then select "Folder". You can rename this folder by right clicking the folder then selecting "Rename". this folder will be named "read-access".  
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%2040.png" width="600" height="400" />
+
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%2041.png" width="600" height="400" />
+
+the same steps will be done for the remaining folders.
 
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%201.png" width="600" height="400" />
 
 
+Now that the folders have been created, permissions can be set. The “read-access” folder will get its permissions set first. Right click the “read-access” folder then click on “Properties”. 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-Now that the folders have been created, permissions can be set. The “read-access” folder will get its permissions set first. Right click the “read-access” folder then click on “properties”. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%202.png" width="600" height="400" />
 
 
 Within the “Properties” screen, click on the “Sharing” tab on the top left of the screen then click on “Share…” in the middle of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%203.png" width="600" height="400" />
 
 
 A “Network access” screen will pop-up next. Within this screen,  type in “domain users” in the dropdown text box next to “Add” then click on “Add”.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%204.png" width="600" height="400" />
 
 
 Once clicked, “Domain Users” will appear in the box below. The permission level has already been set to “Read” so no changes need to be made. Click on “Share” on the bottom right hand corner.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%205.png" width="600" height="400" />
 
 
 The “Network access” screen will appear again with the message “Your folder is shared”. Click on “Done” in the bottom right hand corner of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%206.png" width="600" height="400" />
 
 
 The same steps will be repeated for the remaining folders. Right click the “write-access” folder then click on “properties”. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%207.png" width="600" height="400" />
 
 
 Within the “Properties” screen, click on the “Sharing” tab on the top left of the screen then click on “Share…” in the middle of the screen. 
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%208.png" width="600" height="400" />
 
 
+The “Network access” screen will pop-up next. Within this screen,  type in “domain users” in the dropdown text box next to “Add” then click on “Add”. Click on the drop down menu next to “Read” and select “Read/Write”. Afterwards, Click on “Share” on the bottom right hand corner.
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%209.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-The “Network access” screen will pop-up next. Within this screen,  type in “domain users” in the dropdown text box next to “Add” then click on “Add”.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Click on the drop down menu next to “Read” and select “Read/Write”. Afterwards, Click on “Share” on the bottom right hand corner.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%2010.png" width="600" height="400" />
 
 
 The “Network access” screen will appear again with the message “Your folder is shared”. Click on “Done” in the bottom right hand corner of the screen. 
 
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%2011.png" width="600" height="400" />
 
 
 
