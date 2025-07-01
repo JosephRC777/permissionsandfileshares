@@ -164,298 +164,54 @@ Now the “ACCOUNTANTS” security group will appear in the “_GROUPS” folder
 
 Permissions in the “accounting” folder that was created earlier will now be set to give access to any member in the “ACCOUNTANTS” security group. Within the domain controller, right click the “accounting” folder within the “Windows (C:)” drive and click on “Properties”
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2029.png" width="600" height="400" />
 
 
 Within the “Properties” screen, click on the “Sharing” tab on the top left of the screen then click on “Share…” in the middle of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2030.png" width="600" height="400" />
 
 
 The “Network access” screen will pop-up next. Within this screen,  type in “accountants” in the dropdown text box next to “Add” then click on “Add”.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2031.png" width="600" height="400" />
 
 
 Click on the drop down menu next to “Read” and select “Read/Write”. Afterwards, Click on “Share” on the bottom right hand corner.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2032.png" width="600" height="400" />
 
 The “Network access” screen will appear again with the message “Your folder is shared”. Click on “Done” in the bottom right hand corner of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2033.png" width="600" height="400" />
 
 
 Now that permissions have been given, a normal user will attempt to access this folder through the network. This should fail since no users have been added to the “ACCOUNTANTS” group. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2034.png" width="600" height="400" />
 
 
 The normal user will now be added to the “ACCOUNTANTS” security group. Within “Active Directory Users and Computers” click on the “ACCOUNTANTS” security group in the “_GROUPS” folder. A “Properties” screen will show up. Within this screen, click on the 
 “Members” tab on the top left corner of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2035.png" width="600" height="400" />
 
 
 Click on “Add…” on the bottom left corner. In this section a normal user will be selected to be apart of the “ACCOUNTANTS” group. The user “bawa.bib” which was generated using Powershell will be selected. Type the name of the user in the textbox under “Enter the object names to select” section, then click on “Check Names” on the right hand corner of the screen. Afterwards, click “OK” on the bottom of the screen. 
 
-	
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2036.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2037.png" width="600" height="400" />
 
 
 The “Properties” screen will show up again. If done correctly, a new user has been added to the group as a member. Click on “Apply” then click on “OK” on the bottom of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2038.png" width="600" height="400" />
 
 
 Now, if the added user attempts to access the “accounting” folder within the network, it will be successful. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/f30976cac326f9c551f964325b85f9e61646d732/images/network%20file%20shares%2039.png" width="600" height="400" />
 
 
 This concludes this network shares and permissions tutorial. 						
