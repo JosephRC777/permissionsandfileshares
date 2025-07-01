@@ -12,7 +12,7 @@ In this tutorial, file folders will be created within the domain controller, sec
 
 Windows 10 (21H2)
 Ubuntu Server 20.04
-<h1>High-Level Steps</h1> 
+<h1> Steps Overview </h1> 
 
 - Create some sample file shares with various permissions
 - Attempt to access file shares as a normal user
