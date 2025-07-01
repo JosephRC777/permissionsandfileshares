@@ -81,461 +81,85 @@ The “Network access” screen will appear again with the message “Your folde
 <img src="https://github.com/JosephRC777/permissionsandfileshares/blob/fcd8ebfe853477c387d0806fd2bc4716b2969fbf/images/network%20file%20shares%2011.png" width="600" height="400" />
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Permissions will now be given to the “no-access” folder. The “Read/Write” permissions will be given to domain admin users but will not be given to normal users. Because permissions will not be given to normal users, they will not be able to access this folder. The pictures below show all the steps. 
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/9df774aca4ac570a3677ab30b337d98f5e61914a/images/network%20file%20shares%2012.png" width="600" height="400" />
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/9df774aca4ac570a3677ab30b337d98f5e61914a/images/network%20file%20shares%2013.png" width="600" height="400" />
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2042.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/9df774aca4ac570a3677ab30b337d98f5e61914a/images/network%20file%20shares%2014.png" width="600" height="400" />
 
 
 
 The “accounting” folder will not be shared for now. Now that all the folders have been created and permissions have been set, the next section will cover what a normal user on the network will experience when accessing these folders. 
 
-Attempt to access file shares as a normal user
+<h1>Attempt to access file shares as a normal user</h1>
 
 As a normal domain user on the network, these folders will be accessed. This will be simulated using a virtual machine that is connected to the network. By typing “\\dc-1” in the search bar within “File Explorer” and pressing enter, the folders that are shared through the network will appear. 
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2015.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2016.png" width="600" height="400" />
 
 The“read-access” folder can be accessed by the user, but when the user tries to create something within this folder, it is denied. 
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2017.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2018.png" width="600" height="400" />
 
 
 The “write-access” folder can be accessed by the user and the user can create contents within it as shown below.
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2019.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2020.png" width="600" height="400" />
 
 
 Earlier, permissions for the “no-access” folder were given to domain admins, not normal users. So when the “no-access” folder is clicked, the access is denied. 
 
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2023.png" width="600" height="400" />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2024.png" width="600" height="400" />
 
 
 The “accounting” folder does not show up here because it is not shared within the network.  In the next section a “ACCOUNTANTS” security group will be created and assigned permissions so that the accounting folder can be accessed. 
 
-Create an “ACCOUNTANTS” Security Group, assign permissions, an test access
+<h1>Create an “ACCOUNTANTS” Security Group, assign permissions, an test access</h1>
 
 To begin, the Active directory needs to be accessed within the domain controller in order to create the security group. Open “Active Directory Users and Computers” by using the Windows search bar on the bottom left corner of the screen and typing “Active Directory” and clicking on the application.  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/c8158a0f40f76c07bcabbe0227d6c7c86b433d99/images/Active%20Directory%20DC%20ADmin%201.png" width="600" height="400" />
 
 
 
 Within this application, a folder named “_GROUPS” will be created. right click the “mydomain.com” section and select “New” then click on “Organizational Unit”. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/configure-ad/blob/c8158a0f40f76c07bcabbe0227d6c7c86b433d99/images/Active%20Directory%20DC%20ADmin%202.png" width="600" height="400" />
 
 
 
 A “New Object - Organizational Unit” screen will show up. Within this screen, in the textbox under “Name” the organizational unit can will be given the name “_GROUPS”. After typing the name of the OU, Click on “OK” on the bottom of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2025.png" width="600" height="400" />
 
 
 
 Within this “_GROUPS” folder, a new group named “ACCOUNTANTS” will be created. Within the “_GROUPS” folder, right click and select “New” then click on “Group”.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2026.png" width="600" height="400" />
 
 
 
 A “New Object - Group” screen will appear. Within this screen in the textbox under “Group name:” type in “ACCOUNTANTS”. Afterwards, click “OK” on the bottom right hand corner of the screen. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2027.png" width="600" height="400" />
 
 
 Now the “ACCOUNTANTS” security group will appear in the “_GROUPS” folder. 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/dc51be297f4c8a23c6c912592d23a8bf99dc5979/images/network%20file%20shares%2028.png" width="600" height="400" />
 
 
 Permissions in the “accounting” folder that was created earlier will now be set to give access to any member in the “ACCOUNTANTS” security group. Within the domain controller, right click the “accounting” folder within the “Windows (C:)” drive and click on “Properties”
