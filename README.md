@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/4722ac21b64b314dfb125e002199efe20f965436/images/file%20shares.PNG" width="600" height="200" />
+<img src="https://github.com/JosephRC777/permissionsandfileshares/blob/4722ac21b64b314dfb125e002199efe20f965436/images/file%20shares.PNG" width="600" height="300" />
 </p>
 <h1>Network File Shares and Permissions</h1> 
 In this tutorial, file folders will be created within the domain controller, security groups will be created and permissions for users will be set for access
